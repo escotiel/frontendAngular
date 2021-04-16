@@ -1,0 +1,63 @@
+<h1>Seja bem vindo ao Curso de Angular! <br> Robson Escotiel</h1><br><hr>
+
+<!-- Propriedades que vem do car-produto.component.ts-->
+
+<div class="row">
+  <div class="col">
+    <app-card-produto
+    [foto] = "foto"
+    [nomeProduto] = "nomeProduto"
+    [promocao] = "true"
+    [idProduto] = "idProduto"
+    [dataValidade] = "dataValidade"
+    [precoProduto] = "precoProduto"
+  ></app-card-produto>
+  </div>
+  <div class="col">
+    <app-card-produto
+    foto = "https://designculture.com.br/wp-content/uploads/2017/05/Grande-angular-adapt%C3%A1vel-A-1.jpg"
+    nomeProduto = "Viagens"
+    promocao = "true"
+    idProduto = "12"
+    dataValidade = "2021-04-13"
+    precoProduto = "3000.00"
+  ></app-card-produto>
+  </div>
+</div>
+
+<!--<h3 class="text-danger">{{mensagem}}<br></h3><br><hr>
+ <div class="row">
+  <div class="col">
+    <img class="img-fluid" src="assets/img/cps.png" alt="">
+  </div>
+  <div class="col">
+    <img class="img-fluid" src="assets/img/crud.png" alt="">
+  </div>
+</div>
+
+<h4 class="text-danger">{{ anuncio }}</h4>
+ Posso colocar codigo HTML no conteudo da variavel-->
+
+<!--
+<div class="card" style="width: 18rem">
+  <img [src]="foto" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ nomeProduto | uppercase }}  pipes só formatam variáveis
+      <span *ngIf="promocao; else elseBlock" class="badge badge-success">
+        Promoção
+      </span>
+      <ng-template #elseBlock>
+        <span class="badge badge-primary">
+          Aproveite!
+        </span>
+      </ng-template>
+    </h5>
+    <p class="card-text">Identificação: {{ idProduto | number: '2.0-0' }}<br>
+      Validade: {{dataValidade | date: 'shortDate'}}
+    </p>
+    <a href="#" class="btn btn-primary float-right">
+      {{precoProduto | currency: "BRL" }} "symbol" : "1.2-3"}}
+    </a>
+  </div>
+</div> -->
